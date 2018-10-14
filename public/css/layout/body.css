@@ -1,0 +1,19 @@
+/* main body */
+.main {
+    margin: 3rem;
+    padding: 30rem 0;
+    min-height: 40vh;
+    border-radius: 3px;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+@media (max-width: 560px){
+    .main {
+        margin: 0;
+        padding: 15rem 0;
+        height: 100vh;
+    }
+}

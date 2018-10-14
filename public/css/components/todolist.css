@@ -1,0 +1,90 @@
+/*todolist*/
+.main__todolist {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__list {
+    list-style: none;
+}
+
+.list__item {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: 3px;
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all .4s;
+}
+
+.list__item:hover {
+    background-position: 100%;
+    color: #7ed56f;
+    transform: translateX(2rem);
+    font-weight: 700;
+}
+/*time*/
+.todo__time {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    border-top: 1px solid rgba(107, 105, 105, .2);
+    text-decoration: none !important;
+    width: 20%;
+}
+
+/*clase btn*/
+.close {
+    position: absolute;
+    top: 25%;
+    right: 1.5rem;
+    font-weight: 400;
+    color: #cf3c3c;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.list__item:hover .close {
+    opacity: 1;
+}
+
+.close:hover {
+    font-weight: 400;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #ff0000;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/*mark tesk complited*/
+.is__done{
+    text-decoration: line-through;
+    opacity: .8;
+    color: rgba(107, 105, 105, .8);
+}
+
+.is__done:hover {
+    color: #b92b2b;
+}
+
+.is__done .todo__time {
+    display: none;
+}
+
+@media (max-width: 560px){
+    .main__todolist {
+        top:30rem;
+    }
+    .list__item {
+        font-weight: 700;
+        margin-bottom: 4rem;
+    }
+}

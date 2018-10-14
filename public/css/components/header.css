@@ -1,0 +1,31 @@
+ /* heading title */
+ .header__text-box {
+    cursor: context-menu;
+    text-align: center;
+    font-size: 2.8rem;
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 8rem;
+    border-bottom: 1px solid  #eee;
+    animation: moveDown 1s ease-in-out;
+}
+
+.title-primary {
+    letter-spacing: 1rem;
+    font-weight: 300;
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    font-size: 5rem;
+    transition: all .2s;
+}
+
+.title-primary span {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.title-primary:hover {
+    font-size: 5.5rem;
+}

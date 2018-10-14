@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="basic_todolist_pen.png" href="public/img/basic_todolist_pen.png">
+    <link rel="stylesheet" href="public/css/main.css">
+    <script src="public/js/handlers/dbHandler.js"></script>
+    <script src="public/js/handlers/domHandler.js"></script>
+    <title>Todo App | Makes time easy to handle </title>
+</head>
+    <body onload="init()">
+        <main class="main">
+            <div class="main__logo">
+                <img src="public/img/ToDo.png" alt="logo" class="logo">
+            </div>
+
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="menu">
+                <label for="menu" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item" onclick="showAll()"><span class="btn all">Show all &rarr;</span></li>
+                        <li class="navigation__item" onclick="showComplited()"><span class="btn complited">Show complited &rarr;</span></li>
+                        <li class="navigation__item" onclick="showUncomplited()"><span class="btn uncomplited">Show remaining &rarr;</span></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__text-box">
+                <h2 class="title-primary">todo<span>list</span></h2>
+            </div>
+
+            <div class="main__text-box">
+                <input type="text" class="main__input" placeholder="Add new todo here..." name="todo" onkeypress= "handleInpute(this, event)">
+                <label for="todo" class="input__label">click enter when you done.</label>
+            </div> 
+            <div class="main__todolist">
+                <ul class="main__list"></ul>
+            </div>
+        </main>
+        <script src="public/js/index.js"></script>
+    </body>
+</html>
